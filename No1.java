@@ -16,7 +16,7 @@ public class No1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int a=0, b=0, hsl=1, ipt;
+        int a=0, b=0, hsl=1, ipt, jml=0;
         Scanner input = new Scanner (System.in);
         
         System.out.println("Program Fibonacci");
@@ -26,7 +26,8 @@ public class No1 {
         for(int i=1; i<=ipt; i++) {
             a=b;
             b=hsl;
-            System.out.print(hsl+" ");
+            jml=jml+hsl;
+            System.out.print(jml+" ");
             hsl=a+b;
         }
     }
